@@ -12,6 +12,14 @@ typings install debug --save
 
 Metadata of type definitions installed by typings is kept in `typings.json` file. Actual type definitions files are installed into `typings` directory. Both `typings.json` and `typings` directory should be maintained in source code repository.
 
+### typings from DefinitelyTyped
+
+In the typings search result, if the `source` is `dt` (DefinitelyTyped), then the typing definitions should be installed as global typings.
+
+```
+typings install dt~react-router --save --global
+```
+
 ## For TypeScript
 
 To use type definitions installed by typings, add an entry of `typings/index.d.ts` in `files` section of `tsconfig.json` file.
